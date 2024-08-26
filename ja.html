@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FSC cars store</title>
+    <link rel="stylesheet" href="./dl.css">
+    <link rel="stylesheet" href="./boot.css">
+    <link rel="stylesheet" href="./strap.css">
+    <link rel="stylesheet" href="./rt.css">
+    <link rel="stylesheet" href="./lao.css">
+
+    <link rel="icon" href="./logoor.jpg">
+
+</head>
+<body>
+<!-- 
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <img src="./logoor.jpg" alt="no" class="tn">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+
+                  
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      
+       
+
+
+ <p  class="att">
+for the afghans do not think that the people in united state or rich, because they are working 24hour a day when they come here they aare showing of do not show of stay away from other peoples making best goals.
+ </p>
+
+
+
+ 
+ <form action="https://www.youtube.com/watch?v=3JCaqy-YKGU">
+
+ <button type="submit">login</button >
+</form>
+<a href="https://www.google.com/search?sca_esv=a31f3f3af0b17c3f&sca_upv=1&sxsrf=ADLYWIJHuwocgVtxy9OndWdgACPePfXTXg:1723787290262&q=how+to+use+button+tag+in+html&tbm=isch&source=lnms&fbs=AEQNm0Aa4sjWe7Rqy32pFwRj0UkWxcAMplsBE-YF-9Fv5KEzierhO6Fh_TX9bVE3-JefpcEJzmiPEDYJBfIWarqgRhdAjDsaqxCs8fD2Zwr4WrvBZtO0mKK1EO1zuy5VXqdQmpd8i-eh4xd0wgR9A_zPAkRpdrFfhQ02c7ZRd2TkVGV_xJoQ2WXjdgQuJYwX6Hyc5NoBQxRK&sa=X&ved=2ahUKEwjE1uqI6PiHAxXDQkEAHeeeFGcQ0pQJegQIDhAB&biw=1536&bih=730&dpr=1.25" target="_blank">
+  <button type="submit">login</button>
+</a> --> -->
+
+<!-- <img src="./workplace.jpg" alt="Workplace" usemap="#workmap">
+
+<map name="workmap">
+  <area shape="rect" coords="30,40,270,300" alt="Computer" href="computer.htm">
+  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+  <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm">
+</map>
+-->
+
+
+<!-- <picture>
+  <source media="(min-width: 650px)" srcset="workplace.jpg">
+  <source media="(min-width: 465px)" srcset="img_car.jpg">
+  <img src="img_girl.jpg">
+</picture> -->
+
+<!-- <img src="./workplace.jpg" alt="hello" style="width: auto;"> -->
+<div class="display-cover">
+  <video autoplay></video>
+  <canvas class="d-none"></canvas>
+
+  <div class="video-options">
+      <select name="" id="" class="custom-select">
+          <option value="">Select camera</option>
+      </select>
+  </div>
+
+  <img class="screenshot-image d-none" alt="">
+
+  <div class="controls">
+      <button class="btn btn-danger play" title="Play"><i data-feather="play-circle"></i></button>
+      <button class="btn btn-info pause d-none" title="Pause"><i data-feather="pause"></i></button>
+      <button class="btn btn-outline-success screenshot d-none" title="ScreenShot"><i data-feather="image"></i></button>
+  </div>
+</div>
+
+<script src="https://unpkg.com/feather-icons"></script>
+    <script src="./pt.js"> 
+
+
+      if ('mediaDevices' in navigator && 'getUserMedia' in navigator.mediaDevices) {
+        console.log("Let's get this party started")
+      }
+
+      navigator.mediaDevices.getUserMedia({video: true})
+      
+
+     
+      
+      feather.replace();
+
+const controls = document.querySelector('.controls');
+const cameraOptions = document.querySelector('.video-options>select');
+const video = document.querySelector('video');
+const canvas = document.querySelector('canvas');
+const screenshotImage = document.querySelector('img');
+const buttons = [...controls.querySelectorAll('button')];
+let streamStarted = false;
+
+const [play, pause, screenshot] = buttons;
+
+const constraints = {
+  video: {
+    width: {
+      min: 1280,
+      ideal: 1920,
+      max: 2560,
+    },
+    height: {
+      min: 720,
+      ideal: 1080,
+      max: 1440
+    },
+  }
+};
+
+const getCameraSelection = async () => {
+  const devices = await navigator.mediaDevices.enumerateDevices();
+  const videoDevices = devices.filter(device => device.kind === 'videoinput');
+  const options = videoDevices.map(videoDevice => {
+    return `<option value="${videoDevice.deviceId}">${videoDevice.label}</option>`;
+  });
+  cameraOptions.innerHTML = options.join('');
+};
+
+play.onclick = () => {
+  if (streamStarted) {
+    video.play();
+    play.classList.add('d-none');
+    pause.classList.remove('d-none');
+    return;
+  }
+  if ('mediaDevices' in navigator && navigator.mediaDevices.getUserMedia) {
+    const updatedConstraints = {
+      ...constraints,
+      deviceId: {
+        exact: cameraOptions.value
+      }
+    };
+    startStream(updatedConstraints);
+  }
+};
+
+const startStream = async (constraints) => {
+  const stream = await navigator.mediaDevices.getUserMedia(constraints);
+  handleStream(stream);
+};
+
+const handleStream = (stream) => {
+  video.srcObject = stream;
+  play.classList.add('d-none');
+  pause.classList.remove('d-none');
+  screenshot.classList.remove('d-none');
+  streamStarted = true;
+};
+
+getCameraSelection();
+
+cameraOptions.onchange = () => {
+  const updatedConstraints = {
+    ...constraints,
+    deviceId: {
+      exact: cameraOptions.value
+    }
+  };
+  startStream(updatedConstraints);
+};
+
+const pauseStream = () => {
+  video.pause();
+  play.classList.remove('d-none');
+  pause.classList.add('d-none');
+};
+
+const doScreenshot = () => {
+  canvas.width = video.videoWidth;
+  canvas.height = video.videoHeight;
+  canvas.getContext('2d').drawImage(video, 0, 0);
+  screenshotImage.src = canvas.toDataURL('image/webp');
+  screenshotImage.classList.remove('d-none');
+};
+
+pause.onclick = pauseStream;
+screenshot.onclick = doScreenshot;
+
+    </script>
+</body>
+</html>
